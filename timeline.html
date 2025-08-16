@@ -1,0 +1,455 @@
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8" http-equiv="refresh" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Chirpy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js"></script>
+
+</head>
+<body onload=randomad()>
+
+    <div class="container">
+        <span id="adbg" style="margin: -8px;overflow: hidden;position:absolute;z-index: 3;height:100vh;width:100vw;background-color:#00000080;"></span>
+        <span class="chirper" id="popupad" >
+            <img style="cursor: pointer;z-index: 5;position:fixed;top:5px;right:5px;" onclick="closead()" id="closeicon" src="images/tdesign--close.png" alt="close" >
+            <img id="ad" style="max-height:85%;max-width:90%;display:flex;justify-self:center;padding:20px" src="images/tdesign-menu.png" alt="advertisement">
+            <p>Want a break from the ads? Upgrade to <a href="#popupad" style=color:#4F5EA1; onclick=mypopup()>Chirper ++ </a>!</p>
+        </span>
+        <span class="chirper" id="menu">
+
+            <h1>Welcome back to Chirper!</h1>
+            <span class="chirperbutton" onclick=opentl()>
+                <img style="padding:4px;height:27px" src="images/tdesign--menu.png" alt="home logo">
+                <h2>Home</h2>
+            </span>
+            <span class="chirperbutton" onclick=openmsgs()>
+                <img style="padding:4px;height:27px"src="images/tdesign--user-1-filled.png" alt="messages logo">
+                <h2>Messages</h2>
+            </span>
+            <span class="chirperbutton" onclick=mypopup()>
+                <img style="padding:4px;height:27px"src="images/tdesign--plus.png" alt="profile logo">
+                <h2>Chirper Plus</h2>
+            </span>
+            <span id="chirperid" style="align-items: center;">
+                <img style="width:18%;height:18%;padding-left:10px;"src="images\mcpfp.jpg" alt="profile picture">
+                <span style="padding-left:20px;">
+                    <p><b>yugi</b></p>
+                    <p>@SP0K3NW0RDS</p>
+                </span>
+            </span>
+
+        </span>
+
+        <span class="chirper" id="tl">
+            <span class="post">
+                <mark>Recommended for you</mark>
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\minecraftpfp.jpg" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>miyu</b> <br>@miyukeys . 5h </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    NOT TO BE MEANNNNN but how do you not even know youre ‘bullying’ a bot,,, giggled <br><br>
+                    <img onclick=opennews() src="images/newsimg.jpg" style="width: 40%;border-radius: 5%;cursor:pointer;" alt="newslink"><br>
+                    <a href="index.html" target="_blank" style="color:#4F5EA1;">daybreaknews.org/chirpermoder...</a>
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;19.4k &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;868 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                </span>
+            </span>
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 6h </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        is she even reading any of my messages? im just worried
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\20241226_133252.jpg" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>rice | EDEN NEW SINGLE</b> <br>@edenOT4 . 10h </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    album tracklist!!!!!!! soon!! Can't waitttt omg :D
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2-filled.png" alt="like"> <p>&nbsp;3 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                        
+                </span>
+            </span>
+
+<!--f1 racing discourse -->
+            <div id="f1thread">
+                <span class="post">
+                    <mark>@wonhapii liked</mark>
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images/svospfp.jpg" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>fia</b> <br>@tifosilife . 1d </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                    <p>
+                        🧵 on how supporting driver one is ACTIVELY harmful and why you should drop him before the 2050 Monaco GP (1/101)
+                    </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                            <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;2.1k &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;21 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                    </span>
+
+                <span class="post reply">
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images\f1pfp.png" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>cali¹</b> <br>@f1one . 15h </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                    <p>
+                        lol imagine thinking i’m dropping him when he’s the only actual organic human left on the grid 
+                    </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;27 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;2 &nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                    </span>
+                </span>
+
+                <span class="post reply">
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images/svospfp.jpg" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>fia</b> <br>@tifosilife . 15h </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                    <p>
+                        so what. you think skill only counts if it’s 100% meat-and-bone?? 
+                    </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;49 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;1 &nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                    </span>
+                </span>
+
+                <span class="post reply">
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images\f1pfp.png" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>cali¹</b> <br>@f1one . 3h </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                    <p>
+                        …yes?? it’s literally driving. the point is to control the car yourself, not let your implant shave milliseconds for you
+                    </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;19 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;23 &nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                    </span>
+                </span>
+
+                <span class="post reply">
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images/svospfp.jpg" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>fia</b> <br>@tifosilife  . 2h </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                    <p>
+                        wow we're just ignoring injury statistics then, enjoy your ableist motorsport i guess. get dittoblocked weirdo
+
+                    </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;15 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                    </span>
+                </span></span>
+
+            </div>
+
+<!--end thread-->
+    
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 12d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        i wonder if shes ok. <br>
+                        i know its kind of an invasion of privacy maybe i should check up on her at her uni
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 7d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        the way she's been talking seems different
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+
+
+            <span class="post">
+                    <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\kantaropfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>kantaroooo</b> <br>@wonhapii  . 9d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    ‘b-but the meka boycott’ you mfs are so annoyingggggg omg as if chirper isnt always flooded with bots anyway??? cant wait to see the masses move back a week later lol 🤭🤭
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;503 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;6 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                </span>
+            </span>
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\senapfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>VOTE KNIGHTS SOTY</b> <br>@lumiCrowns  . 10d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    Dittoblock’s problematic psychological effects and why the splatchirp community NEEDS to move platforms, a 🧵:
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;13.9k &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;543 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                </span>
+
+                <span class="post reply">
+                    <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\senapfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>VOTE KNIGHTS SOTY</b> <br>@lumiCrowns  . 10d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    This will be my last post on this site!! Moots follow me on Novo @/lum1crowns ((Someone took my @ ,,,,
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;104 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;32 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                </span>
+                </span>
+
+                <span class="post reply">
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images\kantaropfp.png" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>kantaroooo</b> <br>@wonhapii  . 9d </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                    <p>
+                        op bragged about using ch4tgpt for her scholarship btw LMAOOOO  ur hypothetical ai oomf and i are literally making out rn???
+                    </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                            <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;503 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;6 &nbsp;&nbsp;</p>
+                            <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                    </span>
+                </span>
+            </span>
+
+
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 28d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        ill give her some space
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 28d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        oh
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+
+
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\20241226_133252.jpg" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>rice | EDEN NEW SINGLE</b> <br>@edenOT4 . 1mth </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    HEY EVERYONE sorry about the inactivity!! ive been a bit out of it lately with some personal issues QAQ sorry if i haven't been responding to everyone that checked up on me, im not as comfy with dms as i am with tl interactions since it can get difficult to think of responses ahhhh anxiety moment,, 
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2-filled.png" alt="like"> <p>&nbsp;21 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                </span>
+                <span class="post reply">
+                    <span class="userstatus">
+                        <img style="width:6%;height:6%"src="images\mcpfp.jpg" alt="profile picture">
+                        <span style="display:inline;padding-left:20px">
+                            <p><b>yugi</b> <br>@SP0K3NW0RDS . 1mth </p>
+                        </span>
+                        <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                    </span>
+                        <p>
+                            welcome back! missed your face on the tl, haha
+                            <br>i saw the pic you posted earlier - did you go to st.marys? 
+                        </p>
+                    <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;1 &nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                    </span>
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\20241226_133252.jpg" alt="profile picture">
+                    <span style="display:inline;padding-left:20px">
+                        <p><b>rice | EDEN NEW SINGLE</b> <br>@edenOT4 . 29d </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                <p>
+                    sorry im not comfortable sharing that, especially publically,, thanks for the wb though ^^ 
+                </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                        <img class="tlicons" src="images/tdesign--thumb-up-2-filled.png" alt="like"> <p>&nbsp;1 &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;&nbsp;</p>
+                        <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share</p>
+                </span>
+                    
+                </span>
+            </span>
+
+
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 1mth </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        does she even care???? i bought her that commission she wanted a few weeks ago and everything
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+            <span class="post">
+                <span class="userstatus">
+                    <img style="width:6%;height:6%"src="images\skypfp.png" alt="profile picture">
+                    <span style="display:inline;padding-left:20px;">
+                        <p><b>YUGIPRIV  🔒</b> <br>@S1L3NC3R. 1mth </p>
+                    </span>
+                    <img style="height:20px;position:fixed;right:0px;top:0px;"src="images/tdesign--list.png" alt="list">
+                </span>
+                    <p>
+                        shes's stopped responding to me. what do i do. fuck. 
+                    </p>
+                <span class="chirperreacts" style="justify-content: bottom; display:flex;">
+                    <img class="tlicons" src="images/tdesign--thumb-up-2.png" alt="like"> <p>&nbsp;like &nbsp;&nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--tips.png" alt="reply"> <p>&nbsp;reply &nbsp;</p>
+                    <img class="tlicons" src="images/tdesign--bookmark.png" alt="share"> <p>&nbsp;share &nbsp;</p>
+                </span>
+            </span>
+            
+
+        
+        </span>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
